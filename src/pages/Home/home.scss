@@ -16,10 +16,34 @@
 }
 
 .features {
-  padding: 50px 0 50px 0;
+  padding: 40px 0 40px 0;
 
   .feature-item {
     text-align: center;
+    margin: 10px 0 10px 0;
+
+    .icon {
+      margin-bottom: 15px;
+
+       img {
+         width: auto;
+         height: 40px;
+       }
+    }
+
+    .picture {
+      margin-bottom: 15px;
+      
+      img {
+        max-width: 160px;
+        height: auto;
+      }
+    }
+
+    p {
+      font-size: 20px;
+      font-weight: 400;
+    }
   }
 }
 
@@ -37,12 +61,20 @@
     p {
       font-size: 20px;
     }
+
+    hr {
+      border: 0;
+      border-top: 2px solid #fff;
+      width: 20px;
+      margin-top: -15px;
+    }
   }
 }
 
 .patterns {
   background-color: #002744;
   color: white;
+  padding: 10px 5px 5px 5px;
 
   .pattern-item {
     text-align: center;
@@ -66,10 +98,10 @@
 
   p {
     color: #000;
+    font-size: 24px;
   }
 
   .slider {
-    margin-top: 100px;
     background-color: slategray;
     padding: 50px;
   }

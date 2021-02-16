@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import logo from "./../../images/logo.png";
 
 import style from "./Footer.module.scss";
@@ -8,7 +10,7 @@ function Footer() {
       <div className={style.primary}>
         <div className="container">
           <div className="row">
-            <div className={`col ${style.item}`}>
+            <div className={`col-sm-12 col-md ${style.item}`}>
               <a href="/">
                 <img src={logo} alt="" height={33} />
               </a>
@@ -19,9 +21,20 @@ function Footer() {
                   raiz deles para que não voltem acontecer.
                 </p>
               </div>
+              <div className={style.btns}>
+                <a href="/" className={`btn btn-primary ${style.margin}`}>
+                  <FontAwesomeIcon icon={["fab", "facebook-f"]} />
+                </a>
+                <a href="/" className={`btn btn-primary ${style.margin}`}>
+                  <FontAwesomeIcon icon={["fab", "instagram"]} />
+                </a>
+                <a href="/" className={`btn btn-primary ${style.margin}`}>
+                  <FontAwesomeIcon icon={["fab", "whatsapp"]} />
+                </a>
+              </div>
               <div className={style.buttonGroup}></div>
             </div>
-            <div className={`col ${style.item}`}>
+            <div className={`col-sm-12 col-md ${style.item}`}>
               <h3>Acesso Rápido</h3>
               <ul>
                 <li>
@@ -41,33 +54,34 @@ function Footer() {
                 </li>
               </ul>
             </div>
-            <div className={`col ${style.item}`}>
+            <div className={`col-sm-12 col-md ${style.item}`}>
               <h3>Entre em Contato</h3>
               <ul>
                 <li>
-                  <a href="/">São Paulo - SP (11) 4130-3278</a>
+                  <FontAwesomeIcon icon={"phone-alt"} /> São Paulo - SP (11)
+                  4130-3278
                 </li>
                 <li>
-                  <a href="/">suporte@rbdefender.com.br</a>
+                  <FontAwesomeIcon icon={"envelope"} />{" "}
+                  suporte@rbdefender.com.br
                 </li>
                 <li>
-                  <a href="/">contato@rbdefender.com.br</a>
+                  <FontAwesomeIcon icon={"envelope"} />{" "}
+                  contato@rbdefender.com.br
                 </li>
                 <li>
-                  <a href="/">Segunda a sábado - Das 8 as 18hrs</a>
+                  <FontAwesomeIcon icon={"calendar"} /> Segunda a sábado - Das 8
+                  as 18hrs
                 </li>
                 <li>
-                  <a href="/">Clientes - Atendimento 24hrs</a>
+                  <FontAwesomeIcon icon={"clock"} /> Clientes - Atendimento
+                  24hrs
                 </li>
                 <li className={style.margin}>
-                  <a href="/">R. Aguaraiba, 75</a>
+                  <FontAwesomeIcon icon={"map-marker-alt"} /> R. Aguaraiba, 75 -
+                  Vila Anhanguera,
                 </li>
-                <li>
-                  <a href="/">- Vila Anhanguera,</a>
-                </li>
-                <li>
-                  <a href="/">São Paulo - SP, 04673-050</a>
-                </li>
+                <li>São Paulo - SP, 04673-050</li>
               </ul>
             </div>
           </div>
@@ -76,11 +90,13 @@ function Footer() {
       <div className={style.secondary}>
         <div className="container">
           <div className="row">
-            <div className={`col ${style.item}`}>
+            <div className={`col-sm-12 col-md ${style.item}`}>
               Empresa de serviços e soluções de TI
             </div>
-            <div className={`col ${style.item}`}>&copy; 2021 RBdefender</div>
-            <div className={`col ${style.item}`}>
+            <div className={`col-sm-12 col-md ${style.item}`}>
+              &copy; 2021 RBdefender
+            </div>
+            <div className={`col-sm-12 col-md ${style.item}`}>
               Desenvolvido por ReisDesign
             </div>
           </div>

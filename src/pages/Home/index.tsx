@@ -1,9 +1,12 @@
 import Footer from "../../components/Footer";
 
 import "./home.scss";
-import bg1 from "../../images/bg1.png";
-import bg2 from "../../images/bg2.png";
-import escudo from "../../images/escudo.svg";
+import bg1 from "./../../images/bg1.png";
+import bg2 from "./../../images/bg2.png";
+import support from "./../../images/support.png";
+import shieldIcon from "./../../svg/shield.svg";
+import chronometerIcon from "./../../svg/chronometer.svg";
+import lightbulbIcon from "./../../svg/lightbulb.svg";
 
 function Home() {
   return (
@@ -17,9 +20,9 @@ function Home() {
       <div className="features">
         <div className="container">
           <div className="row">
-            <div className="col feature-item">
+            <div className="col-sm-12 col-md-4 feature-item">
               <div className="icon">
-                <img src={escudo} alt="Escudo" height={40} />
+                <img src={shieldIcon} alt="Escudo" />
               </div>
               <h2>
                 <strong>SEGURANÇA</strong>
@@ -32,10 +35,10 @@ function Home() {
                 <br /> e acessos
               </p>
             </div>
-            <div className="col feature-item">
+            <div className="col-sm-12 col-md-4 feature-item">
               <div className="icon">
                 {" "}
-                <img src={escudo} alt="Escudo" height={40} />
+                <img src={chronometerIcon} alt="Cronometro" />
               </div>
               <h2>
                 <strong>AGILIDADE</strong>
@@ -46,10 +49,10 @@ function Home() {
                 <strong>rápida</strong> e <strong>eficiente</strong>
               </p>
             </div>
-            <div className="col feature-item">
+            <div className="col-sm-12 col-md-4 feature-item">
               <div className="icon">
                 {" "}
-                <img src={escudo} alt="Escudo" height={40} />
+                <img src={lightbulbIcon} alt="Lampada" />
               </div>
               <h2>
                 <strong>INOVAÇÃO</strong>
@@ -74,28 +77,32 @@ function Home() {
       <div className="info">
         <div className="container">
           <div className="row">
-            <div className="col info-item">
+            <div className="col-sm-12 col-md-3 info-item">
               <h1>
                 <strong>4</strong>
               </h1>
+              <hr />
               <p>Anos de inovaçao</p>
             </div>
-            <div className="col info-item">
+            <div className="col-sm-12 col-md-3 info-item">
               <h1>
                 <strong>2</strong>
               </h1>
+              <hr />
               <p>Unidades</p>
             </div>
-            <div className="col info-item">
+            <div className="col-sm-12 col-md-3 info-item">
               <h1>
                 <strong>9</strong>
               </h1>
+              <hr />
               <p>Certificações Técnicas</p>
             </div>
-            <div className="col info-item">
+            <div className="col-sm-12 col-md-3 info-item">
               <h1>
                 <strong>20000</strong>
               </h1>
+              <hr />
               <p>ISO</p>
             </div>
           </div>
@@ -105,27 +112,27 @@ function Home() {
       <div className="patterns">
         <div className="container">
           <div className="row">
-            <div className="col pattern-item">
+            <div className="col-sm-12 col-md pattern-item">
               <h1>
                 <strong>PADRÕES:</strong>
               </h1>
             </div>
-            <div className="col pattern-item">
+            <div className="col-sm-12 col-md pattern-item">
               <h1>
                 <strong>ITIL</strong>
               </h1>
             </div>
-            <div className="col pattern-item">
+            <div className="col-sm-12 col-md pattern-item">
               <h1>
                 <strong>COBIT</strong>
               </h1>
             </div>
-            <div className="col pattern-item">
+            <div className="col-sm-12 col-md pattern-item">
               <h1>
                 <strong>Nbr 14565</strong>
               </h1>
             </div>
-            <div className="col pattern-item">
+            <div className="col-sm-12 col-md pattern-item">
               <h1>
                 <strong>SCRUM</strong>
               </h1>
@@ -145,6 +152,32 @@ function Home() {
           <br />
           seu empreendimento <strong>crescer cada vez mais.</strong>
         </p>
+        <div className="features">
+          <div className="container">
+            <div className="row">
+              <div className="col-sm-12 col-md feature-item">
+                <div className="picture">
+                  <img src={support} alt="Escudo" />
+                </div>
+                <h2>
+                  <strong>SUPORTE DE TI</strong>
+                </h2>
+                <p>
+                  Especialistas em suporte
+                  <br />
+                  tanto <strong>presencial, como
+                  <br /> remoto e home office</strong>
+                </p>
+              </div>
+              <div className="col-sm-12 col-md feature-item">
+
+              </div>
+              <div className="col-sm-12 col-md feature-item">
+
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="slider">
           {">"} INSERIR SLIDER DE LOGOS {"<"}
         </div>
