@@ -18,12 +18,15 @@ function NavBar() {
         <ul className="button-bar">
           <li className="nav-link">
             <a href="/">Serviços</a>
+            <hr/>
           </li>
           <li className="nav-link">
             <a href="/">Projetos</a>
+            <hr/>
           </li>
           <li className="nav-link">
             <a href="/">Soluções</a>
+            <hr/>
           </li>
         </ul>
       </div>

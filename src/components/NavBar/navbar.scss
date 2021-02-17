@@ -27,6 +27,22 @@
       font-size: 20px;
       font-weight: 700;
     }
+
+    hr {
+      border: 1px solid transparent;
+      margin: 1px auto auto auto;
+      transition: all 0.2s linear;
+      border-radius: 7px 7px 7px 7px;
+      width: 0px;
+      text-align: center;
+    }
+
+    &:hover {
+      hr {
+        border: 1px solid #fcfcfc;
+        width: 100%;
+      }
+    }
   }
 
   .brand-container {
@@ -48,6 +64,24 @@
       border-top-left-radius: 5px;
       text-decoration: none;
       background: linear-gradient(45deg, transparent 12px, #ffffff 12px);
+      transition: all 0.1s linear;
+
+      &:hover {
+        padding: 5px 25px 5px 35px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .brand {
+        float: left;
+        text-align: center;
+        width: 100%;
+      }
+
+      .client-area {
+        float: left;
+        display: none;
+      }
     }
   }
 }

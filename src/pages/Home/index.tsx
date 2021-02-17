@@ -12,9 +12,7 @@ function Home() {
   return (
     <div className="home">
       <div className="background">
-        <div className="container">
-          <img src={bg1} alt="background" />
-        </div>
+        <img src={bg1} alt="background" />
       </div>
 
       <div className="features">
