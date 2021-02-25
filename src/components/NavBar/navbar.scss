@@ -2,9 +2,9 @@
   background-color: #003b66;
   padding: 30px 30px 0 30px;
   border-bottom: 2px solid rgb(255, 255, 255, 0.03);
-  -webkit-box-shadow: 0px 6px 38px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 6px 38px 0px rgba(0,0,0,0.75);
-  box-shadow: 0px 6px 38px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 6px 38px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 6px 38px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 6px 38px 0px rgba(0, 0, 0, 0.75);
   z-index: 1000;
 
   .button-bar {
@@ -43,11 +43,18 @@
         width: 100%;
       }
     }
+
+    @media (max-width: 576px) {
+      a {
+        font-size: 15px;
+      }
+    }
   }
 
   .brand-container {
     height: 38px;
     float: none;
+    text-align: center;
 
     .brand {
       float: left;
@@ -72,6 +79,11 @@
     }
 
     @media (max-width: 576px) {
+      & {
+        height: 68px;
+        text-align: center;
+      }
+
       .brand {
         float: left;
         text-align: center;
@@ -79,8 +91,17 @@
       }
 
       .client-area {
-        float: left;
-        display: none;
+        float: none;
+        background: #ffffff;
+        border-radius: 5px;
+        text-align: center;
+        display: inline-block;
+        margin-top: 5px;
+        padding: 5px 15px 5px 15px;
+
+        &:hover {
+          padding: 5px 20px 5px 20px;
+        }
       }
     }
   }

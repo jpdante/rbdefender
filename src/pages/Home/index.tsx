@@ -1,4 +1,5 @@
 import Footer from "../../components/Footer";
+import AliceCarousel from 'react-alice-carousel';
 
 import "./home.scss";
 import bg1 from "./../../images/bg1.png";
@@ -8,10 +9,42 @@ import shieldIcon from "./../../svg/shield.svg";
 import chronometerIcon from "./../../svg/chronometer.svg";
 import lightbulbIcon from "./../../svg/lightbulb.svg";
 
+import sophosLogo from "./../../svg/brands/sophos.png"; 
+import microsoftLogo from "./../../svg/brands/microsoft.png"; 
+import intelbrasLogo from "./../../svg/brands/intelbras.png"; 
+import ciscoLogo from "./../../svg/brands/cisco.png"; 
+import autodeskLogo from "./../../svg/brands/autodesk.png"; 
+import dellLogo from "./../../svg/brands/dell.png"; 
+import fortinetLogo from "./../../svg/brands/fortinet.png"; 
+import furukawaLogo from "./../../svg/brands/furukawa.png"; 
+import kasperskyLogo from "./../../svg/brands/kaspersky.png"; 
+import officeLogo from "./../../svg/brands/office.png"; 
+import windowsServerLogo from "./../../svg/brands/windows-server.png"; 
+
 function Home() {
+  const responsive = {
+    0: { items: 1 },
+    568: { items: 1 },
+    1024: { items: 5 },
+  };
+
+  const items = [
+    <img src={sophosLogo} width={200} alt="Sophos logo"/>,
+    <img src={microsoftLogo} width={200} alt="Microsoft logo"/>,
+    <img src={intelbrasLogo} width={200} alt="Intelbras logo"/>,
+    <img src={ciscoLogo} width={200} alt="Cisco logo"/>,
+    <img src={autodeskLogo} width={200} alt="Autodesk logo"/>,
+    <img src={dellLogo} width={200} alt="Dell logo"/>,
+    <img src={fortinetLogo} width={200} alt="Fortinet logo"/>,
+    <img src={furukawaLogo} width={200} alt="Furukawa logo"/>,
+    <img src={kasperskyLogo} width={200} alt="Kaspersky logo"/>,
+    <img src={officeLogo} width={200} alt="Office logo"/>,
+    <img src={windowsServerLogo} width={200} alt="Windows Server logo"/>,
+  ];
+
   return (
     <div className="home">
-      <div className="background">
+      <div className="background bg-white">
         <img src={bg1} alt="background" />
       </div>
 
@@ -66,10 +99,8 @@ function Home() {
         </div>
       </div>
 
-      <div className="background2">
-        <div className="container">
-          <img src={bg2} alt="background" />
-        </div>
+      <div className="background">
+        <img src={bg2} alt="background" />
       </div>
 
       <div className="info">
@@ -163,21 +194,20 @@ function Home() {
                 <p>
                   Especialistas em suporte
                   <br />
-                  tanto <strong>presencial, como
-                  <br /> remoto e home office</strong>
+                  tanto{" "}
+                  <strong>
+                    presencial, como
+                    <br /> remoto e home office
+                  </strong>
                 </p>
               </div>
-              <div className="col-sm-12 col-md feature-item">
-
-              </div>
-              <div className="col-sm-12 col-md feature-item">
-
-              </div>
+              <div className="col-sm-12 col-md feature-item"></div>
+              <div className="col-sm-12 col-md feature-item"></div>
             </div>
           </div>
         </div>
         <div className="slider">
-          {">"} INSERIR SLIDER DE LOGOS {"<"}
+          <AliceCarousel items={items} responsive={responsive} disableButtonsControls/>
         </div>
       </div>
       <Footer />
