@@ -11,7 +11,7 @@ function NavBar() {
               <img src={logo} alt="" height={33} />
             </a>
           </div>
-          <a className="client-area" href="/">
+          <a className="client-area" href="https://portal.rbdefender.com.br/">
             Área do Cliente
           </a>
         </div>
